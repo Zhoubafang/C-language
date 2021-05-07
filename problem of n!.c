@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int factorial(int k)
-{									  //ÀıÈç£ºÇó3£¡
+{									  //ä»¥æ±‚3ï¼ä¸ºä¾‹
 	if (k == 1)	return 1;
-	else return k * factorial(k - 1); //½«k-1=2µÄÖµ»Ø´úÈëint factorial(int k)£¨µÚÈıĞĞÖĞµÄ´úÂë£© k-1µÄÖµ¶ÔµÚÈıĞĞ·´À¡ÖµµÄÇé¿ö
+	else return k * factorial(k - 1); //å°†k-1=2çš„å€¼å›ä»£å…¥int factorial(int k)ï¼ˆç¬¬ä¸‰è¡Œä¸­çš„ä»£ç ï¼‰ k-1çš„å€¼å¯¹ç¬¬ä¸‰è¡Œåé¦ˆå€¼çš„æƒ…å†µï¼Œå¹¶åŠ ä»¥åˆ¤æ–­æ˜¯å¦k=1
 }
 int main(void)
 {
