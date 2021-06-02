@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main( void )      //水仙花数：个位的三次方 + 十位三次方 + 百位三次方 = 该数
+{
+	int  unit, ten, hundred, data,copy;
+	for (data = 100; data < 1000; data++)
+	{
+		copy = data;
+		unit = copy % 10;
+		ten = copy / 10 % 10;        // 4 32
+		hundred = copy / 100;
+		if (data == (unit * unit * unit + ten * ten * ten + hundred * hundred * hundred))
+			printf("%d ", data);
+	}    //易错：注意括号的范围
+	return 0;
+}
