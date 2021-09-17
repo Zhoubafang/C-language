@@ -2,12 +2,12 @@
 
 int main(void)
 {
-	for(i=1;i<=n;i++)	//(n+1)次
-		for(j=1;j<=n;j++)	//(n * (n+1))次
+	for(i=1;i<=n;i++)	//(n+1)是语句频度 对第五行来讲语句频度为n+1,for循环是n次 
+		for(j=1;j<=n;j++)	//在(n * (n+1))中n是指第一层for循环执行了n次，n+1是本层for循环的语句频度 
 			{
 				c[i][j] = 0;	//(n*n)
-				for(k=1;k<=n;k++)	//(n*n*(n+1))次
-					c[i][j] = c[i][j] + a[i][k] * b[k][j];	//n*n*n次
+				for(k=1;k<=n;k++)	//(n*n*(n+1))
+					c[i][j] = c[i][j] + a[i][k] * b[k][j];	//n*n*n
 			}
 	retrun 0;
  } 
