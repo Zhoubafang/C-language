@@ -19,7 +19,7 @@ void reverse(int p[], int n)
 		t = p[i]; p[i] = p[j]; p[j] = t;
 	}
 } */
-void reverse(int *p, int n)
+void reverse(int *p, int n)	//后面没有分号，告诉编译器这是定义reverse(int *p,int n)而不是调用函数，或者是声明原型   
 {
 	int *pj, t;             //*p指向整个数组   *p指向数组第一个元素实现指向整个数组a[i] 数组在计算机看来就是指针，计算机认为指针（数组）以指向首元素的方式指向整个数组
 	for(pj = p+n-1;p<pj;p++,pj--)   //pj：第一个元素(p) + 总元素个数(n) - 1 = 尾元素  在22行中*p通过指向数组中第一个元素来达到指向整个数组的效果，思考：p+n中的p的具体值以及数组中存在10000个元素的处理方式？
